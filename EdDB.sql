@@ -57,7 +57,7 @@ create table Assignment (
 go
 
 create table MajorClassRel (
-	Id int primary key,
+	Id int primary key identity(1,1),
 	MajorId int not null,
 	ClassId int not null,
 	foreign key (MajorId) references Major(Id),
